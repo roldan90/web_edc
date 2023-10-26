@@ -1,0 +1,214 @@
+
+
+:root{
+    --fuente_google: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative; /* Añade posición relativa al cuerpo */
+    background-image: url('../img/fondo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+}
+
+
+nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Ajusta según tus necesidades */
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 20%;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 2px solid transparent; 
+    font-family: var(--fuente_google);
+}
+
+nav a:hover {
+    color: #ff0707;
+}
+
+hr {
+    border: none; /* Elimina el borde predeterminado */
+    height: 0.5px; /* Altura de la línea */
+    background-color: #e9e8e8; /* Color blanco */
+    width: 100%; /* Ancho del 100% del contenedor padre */
+}
+
+header {
+    color: #fff; /* Color blanco */
+    font-size: 50px; /* Tamaño de fuente 45px */
+    text-align: center; /* Alineación al centro */
+    font-family: var(--fuente_google);
+    width: 100%;
+    height: 380px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.nuevo_album {
+    width: 380px;
+    height: 50px;
+    border: 2px solid white;
+    padding: 20px; /* Ajusta según tus necesidades */
+    box-sizing: border-box; 
+    background-color: rgb(253, 253, 253, 0.2);
+    color: #fff;
+    font-family: var(--fuente_google);
+    font-size: 18px;
+    text-align: center; /* Centrar el texto */
+    line-height: 10px; 
+    position: absolute;
+    top: 19%; /* Ajusta según tu necesidad */
+    left: 47%; /* Ajusta según tu necesidad */
+    transform: translate(-50%, -50%); 
+    margin-top: 1em;
+}
+
+.reproductor {
+    width: 90px;
+    height: 90px;
+    border: 2px solid white;
+    padding: 20px; /* Ajusta según tus necesidades */
+    box-sizing: border-box; 
+    background-color: rgb(253, 253, 253, 0.2);
+    color: #fff;
+    border-radius: 50%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer; /* Cambia el cursor a un señalador al pasar el mouse */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+.reproductor:hover {
+    color: #ee6868;
+}
+
+main {
+    width: 100%;
+    height: 360px;
+    background-color: white;
+}
+
+/* Estilo base del botón */
+.button {
+    display: inline-block;
+    padding: 6px 14px; /* Ajusta el relleno según sea necesario */
+    font-size: 10px; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px; /* Bordes redondeados */
+  }
+  
+  /* Estilo para el fondo azul */
+  .button-blue {
+    background-color: #62ccdf; /* Código de color azul. Puedes ajustar esto según tus preferencias */
+    color: #fff; /* Texto blanco */
+  }
+  
+  /* Hover (efecto al pasar el mouse) */
+  .button-blue:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse. Puedes ajustar esto según tus preferencias */
+  }
+  
+  table {
+    margin: 0 auto;
+    text-align: left;
+    font-family: var(--fuente_google);
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+
+  table caption {
+    font-size: 35px; /* Ajusta el tamaño de la fuente según sea necesario */
+    text-align: center; /* Alinea el texto del caption
+     a la izquierda */
+    margin-top: 25px;
+    font-weight: bold;
+  }
+
+  table th,table td {
+    border-bottom: 1px solid black;
+    padding: 16px; /* Añade un poco de espacio alrededor del contenido */
+    text-align: left;
+  }
+
+  table td:first-child, table th:first-child {
+    font-weight: bold;
+}
+table tr:last-child td {
+    border-bottom: none;
+}
+ 
+footer {
+    display: flex;
+    justify-content: space-around; /* Cambiado a space-around para centrar y separar uniformemente */
+    align-items: center;
+    background-color: black;
+      
+}
+.caja-footer {
+    width: 50%; /* O el ancho deseado, dejando suficiente espacio para el margen entre las cajas */
+    text-align: center;
+}
+
+.texto-footer {
+    color: #fff;
+    font-family: var(--fuente_google);
+    font-size: 50px;
+}
+
+.logos-footer ul {
+    list-style: none;
+    text-align: center; /* Centra los ítems en el navbar */
+    margin: 0;
+}
+
+.logos-footer li {
+    display: inline-block; /* Muestra los ítems en línea uno al lado del otro */
+    margin-right: 20px; /* Espaciado entre los ítems */
+  }
+  
+  /* Estilos para los enlaces dentro de los ítems */
+  .logos-footer li a {
+    text-decoration: none; /* Elimina la subrayado predeterminado de los enlaces */
+    color: white; /* Color del texto en el navbar */
+  }
+  
+  
