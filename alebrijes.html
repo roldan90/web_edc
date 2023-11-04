@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets-alebrije/css/style.css">
+    <title>Tienda alebrijes</title>
+</head>
+<body>
+    <nav>
+        <section class="menu">
+            <ul>
+                <li>
+                    <a href="alebrijes.html">
+                        <img src="assets-alebrije/img/pngwing.com.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        ARTE
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        COLECCIONES
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        CONÓCENOS
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="cuentas">
+            <a href="#"  onclick="mostrarModal('inicio')">Iniciar sesión</a>
+            <a href="#"  onclick="mostrarModal('registro')">Registro</a>
+        </section>
+    </nav>
+    <header>
+        <section>
+            <p class="texto-grande">UNA EXPERIENCIA</p>
+            <P class="texto-grande">TOTALMENTE NUEVA</P>
+            <p class="texto-grande">EN EL ARTE</p>
+            <p class="texto-chico">Una tradición milenaria nos ha acompañado a través de todo</p>
+            <p class="texto-chico">este tiempo. <a href="#" class="link-header">Aprende más ...</a></p>
+        </section>
+    </header>
+    <main>
+        <section class="main-p1">
+            <article>
+                <img src="assets-alebrije/img/alebrijes-en-oaxaca-940x626.jpg" alt="" height="400px" width="100%">
+            </article>
+            <article class="texto-main">
+                <p class="texto-grande">ALEBRIJES</p>
+                <P class="texto-grande">MEXICANOS</P>
+                <P class="texto-chico">Tallados en madera cumples con las más</P>
+                <P class="texto-chico">altas exigencias en diseño</P>
+                <p>
+                    <a href="#" onclick="mostrarModal('pedido')">Has tu pedido</a>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-p2">
+            <article class="texto-main">
+                <p class="texto-grande">CREATIVIDAD E</p>
+                <p class="texto-grande">IMAGINACIÓN</p>
+                <p class="texto-chico">Un sueño hecho realidad</p>
+                <p>
+                    <a href="#" onclick="mostrarModal('pedido2')">Has tu pedido</a>
+                </p>
+            </article>
+            <article>
+                <img src="assets-alebrije/img/NOMADAS-1.jpg" alt="" height="400px" width="100%">
+            </article>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <section>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="assets-alebrije/img/icons8-spotify-60.png" alt="" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets-alebrije/img/icons8-facebook-60.png" alt="" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets-alebrije/img/icons8-pinterest-60.png" alt="" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets-alebrije/img/icons8-instagram-100.png" alt="" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets-alebrije/img/icons8-youtube-play-60.png" alt="" width="30px" height="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets-alebrije/img/icons8-twitter-96.png" alt="" width="30px" height="30px">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <article class="copy">
+                © 2022 Todos los derechos reservados al arte popular
+            </article>
+        </section>
+    </footer>
+
+    <dialog id="inicio">
+        <h2>Iniciar sesion</h2>
+        <input type="text" placeholder="Usuario">
+        <br><br>
+        <input type="text" placeholder="Contraseña">
+        <br><br>
+        <button>Iniciar</button>
+
+        <button onclick="cerrarModal('inicio')">Cancelar</button>
+    </dialog>
+    <dialog id="registro">
+        <h2>Registro de usuario</h2>
+        <input type="text" placeholder="Usuario">
+        <br><br>
+        <input type="text" placeholder="Contraseña">
+        <br><br>
+        <button>Registrarse</button>
+        <button onclick="cerrarModal('registro')">Cancelar</button>
+    </dialog>
+    <dialog id="pedido">
+        <h3>Pedido realizado!!!!!!</h3>
+        <button onclick="cerrarModal('pedido')">Aceptar</button>
+    </dialog>
+    <dialog id="pedido2">
+        <h3>Pedido realizado!!!!!!</h3>
+        <button onclick="cerrarModal('pedido2')">Aceptar</button>
+    </dialog>
+
+
+    <script src="assets-alebrije/js/app.js"></script>
+
+</body>
+</html>

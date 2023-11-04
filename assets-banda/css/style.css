@@ -4,6 +4,7 @@
     --fuente_google: 'Montserrat', sans-serif;
 }
 
+
 body {
     position: relative; /* Añade posición relativa al cuerpo */
     background-image: url('../img/fondo.jpeg');
@@ -12,6 +13,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    height:100%;
 }
 
 body::before {
@@ -181,7 +183,6 @@ footer {
     justify-content: space-around; /* Cambiado a space-around para centrar y separar uniformemente */
     align-items: center;
     background-color: black;
-      
 }
 .caja-footer {
     width: 50%; /* O el ancho deseado, dejando suficiente espacio para el margen entre las cajas */
